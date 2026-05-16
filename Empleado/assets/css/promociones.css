@@ -1,0 +1,190 @@
+/* Styles for small promotions */
+.promotion.small {
+    position: relative;
+    width: 20vw;
+    min-width: 150px;
+    max-width: 250px;
+    height: 400px;
+   display: block;
+    flex-direction: column;
+    background: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.promotion.small:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.promotion.small .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    transition: opacity 0.6s ease;
+    z-index: 1;
+}
+
+.promotion.small:hover .image {
+    opacity: 1;
+}
+
+.promotion.small .content {
+    position: relative;
+    z-index: 2;
+    padding: 5em 1em;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.7); /* semi-transparent white background */
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.promotion.small .content h3 {
+    margin: 0 0 0.3em 0;
+    font-size: 1em;
+    color: #ff6b35; /* Ignitus orange */
+}
+
+.promotion.small .content p {
+    margin: 0;
+    font-size: 0.85em;
+    line-height: 1.3;
+    color: #333;
+}
+
+/* Update colors for large promotions to Ignitus style */
+.promotion.large .content h2,
+.promotion.large .content h3 {
+    color: #ff6b35; /* Ignitus orange */
+}
+
+.promotion.large .content p {
+    color: #333;
+}
+
+/* Update promotion dots colors */
+.promotion-dots .dot {
+    background-color: #ccc;
+}
+
+.promotion-dots .dot.active {
+    background-color: #ff6b35;
+    box-shadow: 0 0 8px rgba(255, 107, 53, 0.6);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 980px) {
+    .promotion-grid {
+        flex-direction: column;
+        gap: 1.5em;
+        padding: 1em;
+    }
+
+    .promotion.large, .promotion.small {
+        width: 100%;
+        max-width: none;
+        min-width: auto;
+    }
+}
+
+/* Print styles for uniform promotions */
+@media print {
+    .promotion.small {
+        width: 300px;
+        height: 400px;
+        background: white;
+        border: 1px solid #ccc;
+        box-shadow: none;
+        page-break-inside: avoid;
+    }
+
+    .promotion.small .image {
+        position: relative;
+        height: 250px;
+        width: 100%;
+        background: white;
+    }
+
+    .promotion.small .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+    }
+
+    .promotion.small .content {
+        position: relative;
+        padding: 1em;
+        background: white;
+        border-radius: 0;
+        box-shadow: none;
+        height: 150px;
+        overflow: hidden;
+    }
+
+    .promotion.small .content h3 {
+        font-size: 1em;
+        margin: 0 0 0.5em 0;
+    }
+
+    .promotion.small .content p {
+        font-size: 0.8em;
+        line-height: 1.2;
+    }
+
+    .promotion.large {
+        width: 300px;
+        height: 400px;
+        background: white;
+        border: 1px solid #ccc;
+        box-shadow: none;
+        page-break-inside: avoid;
+    }
+
+    .promotion.large .image {
+        position: relative;
+        height: 250px;
+        width: 100%;
+        background: white;
+    }
+
+    .promotion.large .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+    }
+
+    .promotion.large .content {
+        position: relative;
+        padding: 1em;
+        background: white;
+        border-radius: 0;
+        box-shadow: none;
+        height: 150px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .promotion.large .content h2 {
+        font-size: 1em;
+        margin: 0 0 0.5em 0;
+    }
+
+    .promotion.large .content p {
+        font-size: 0.8em;
+        line-height: 1.2;
+    }
+}
