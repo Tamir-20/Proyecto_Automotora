@@ -1,0 +1,368 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Panel de Control – Ignitus Taller</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="header-fixed">
+						<h1><a href="index.html">IGNITUS</a></h1>
+						<nav class="links">
+							<ul>
+								<li><a href="index.html">Panel</a></li>
+								<li><a href="catalogo.html">Clientes</a></li>
+								<li><a href="vehiculos.html">Vehículos</a></li>
+								<li><a href="reservas.html">Reservas</a></li>
+								<li><a href="servicios.html">Servicios</a></li>
+								<li><a href="index.html">Insumos</a></li>
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<li class="notifications">
+									<a class="fa-bell" href="#notificaciones">Notificaciones</a>
+									</form>
+								<li class="search">
+									<a class="fa-search" href="#search">Buscar</a>
+									<form id="search" method="get" action="#">
+										<input type="text" name="query" placeholder="Buscar" />
+									</form>
+								</li>
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+				<!-- Menu -->
+					<section id="menu">
+
+						<!-- Search -->
+							<section>
+								<form class="search" method="get" action="#">
+									<input type="text" name="query" placeholder="Buscar" />
+								</form>
+							</section>
+
+						<!-- Links -->
+							<section>
+								<ul class="links">
+									<li>
+										<a href="#inicio">
+											<h3>Inicio</h3>
+											<p>Vuelve a la página principal</p>
+										</a>
+									</li>
+									<li>
+										<a href="#servicios">
+										<h3>Servicios</h3>
+										<p>Conoce todo lo que ofrecemos para tu vehículo</p>
+										</a>
+									</li>
+									<li>
+										<a href="#nosotros">
+										<h3>Sobre Nosotros</h3>
+										<p>Descubre quiénes somos y nuestra misión</p>
+										</a>
+									</li>
+									<li>
+										<a href="#contacto">
+										<h3>Contacto</h3>
+										<p>Comunícate con nosotros fácilmente</p>
+										</a>
+									</li>
+								</ul>
+							</section>
+
+						<!-- Actions -->
+							<section>
+								<ul class="actions stacked">
+									<li><a href="../Comercial/login.php#login_pag" class="button large fit">Iniciar sesión</a></li>
+									<li><a href="../Comercial/login.php#register_pag" class="button large fit">Registrarse</a></li>
+								</ul>
+							</section>
+					</section>
+
+				<!-- Main -->
+					<main id="main">
+						<div class="dashboard">
+							<!-- Sidebar: Servicios del Día -->
+							<div class="sidebar panel-servicios">
+								<h2>Servicios del Día</h2>
+								<div class="card-servicio card-con-fondo">
+									<h3>Cambio de aceite</h3>
+									<p>Empleado asignado: Juan Pérez</p>
+									<p>Hora estimada de finalización: 12:00 PM</p>
+									<p>Estado: <span class="estado-en-proceso">[EN PROCESO]</span></p>
+									<p>Vehículo: Toyota Corolla (ABC-123)</p>
+								</div>
+								<div class="card-servicio card-con-fondo">
+									<h3>Revisión de frenos</h3>
+									<p>Empleado asignado: María González</p>
+									<p>Hora estimada de finalización: 11:30 AM</p>
+									<p>Estado: <span class="estado-pendiente">[PENDIENTE]</span></p>
+									<p>Hora programada: 10:00 AM</p>
+								</div>
+								<div class="card-servicio card-con-fondo">
+									<h3>Diagnóstico eléctrico</h3>
+									<p>Empleado asignado: Carlos López</p>
+									<p>Hora estimada de finalización: 1:00 PM</p>
+									<p>Estado: <span class="estado-finalizado">[FINALIZADO]</span></p>
+									<p>Vehículo: Honda Civic (XYZ-456)</p>
+								</div>
+								<div class="card-servicio card-con-fondo">
+									<h3>Alineación y balanceo</h3>
+									<p>Empleado asignado: Ana Rodríguez</p>
+									<p>Hora estimada de finalización: 2:00 PM</p>
+									<p>Estado: <span class="estado-en-proceso">[EN PROCESO]</span></p>
+									<p>Vehículo: Ford Focus (DEF-789)</p>
+								</div>
+							</div>
+							<!-- Main content: Panels -->
+							<div class="main-content">
+								<!-- Primera fila: Vehículos y Notificaciones -->
+								<div class="row">
+									<div class="column panel-vehiculos">
+										<h2>Vehículos Ingresados Hoy</h2>
+										<div class="card-con-fondo">
+											<table>
+												<thead>
+													<tr>
+														<th>Patente</th>
+														<th>Marca</th>
+														<th>Modelo</th>
+														<th>Hora de ingreso</th>
+														<th>Servicio solicitado</th>
+														<th>Estado</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>ABC-123</td>
+														<td>Toyota</td>
+														<td>Corolla</td>
+														<td>08:30 AM</td>
+														<td>Cambio de aceite</td>
+														<td>En proceso</td>
+													</tr>
+													<tr>
+														<td>XYZ-456</td>
+														<td>Honda</td>
+														<td>Civic</td>
+														<td>09:15 AM</td>
+														<td>Revisión completa</td>
+														<td>Pendiente</td>
+													</tr>
+													<tr>
+														<td>DEF-789</td>
+														<td>Ford</td>
+														<td>Focus</td>
+														<td>10:00 AM</td>
+														<td>Diagnóstico eléctrico</td>
+														<td>En proceso</td>
+													</tr>
+													<tr>
+														<td>GHI-012</td>
+														<td>Nissan</td>
+														<td>Sentra</td>
+														<td>10:45 AM</td>
+														<td>Cambio de neumáticos</td>
+														<td>Finalizado</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="column panel-notificaciones">
+										<h2>Notificaciones</h2>
+										<table>
+											<thead>
+												<tr>
+													<th>Fecha</th>
+													<th>Mensaje</th>
+													<th>Prioridad</th>
+													<th>Estado</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>05/10/2023</td>
+													<td>Alerta: Vehículo Ford Focus requiere repuestos adicionales.</td>
+													<td>Alta</td>
+													<td>Pendiente</td>
+												</tr>
+												<tr>
+													<td>05/10/2023</td>
+													<td>Recordatorio: Control de stock de filtros de aire.</td>
+													<td>Media</td>
+													<td>Leído</td>
+												</tr>
+												<tr>
+													<td>05/10/2023</td>
+													<td>Nuevo turno agendado por Juan Pérez para el 7/10 – Alineación.</td>
+													<td>Baja</td>
+													<td>Nuevo</td>
+												</tr>
+												<tr>
+													<td>05/10/2023</td>
+													<td>Entrega pendiente: Toyota Corolla (Revisión completa).</td>
+													<td>Alta</td>
+													<td>Pendiente</td>
+												</tr>
+												<tr>
+													<td>05/10/2023</td>
+													<td>Actualización: Servicio de frenos completado para Honda Civic.</td>
+													<td>Media</td>
+													<td>Leído</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<!-- Segunda fila: Clientes y Reservas -->
+								<div class="row">
+									<div class="column panel-clientes">
+										<h2>Clientes</h2>
+										<table>
+											<thead>
+												<tr>
+													<th>Nombre</th>
+													<th>Vehículo</th>
+													<th>Servicio actual</th>
+													<th>Teléfono</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Juan Pérez</td>
+													<td>Toyota Corolla</td>
+													<td>Cambio de aceite</td>
+													<td>555-1234</td>
+												</tr>
+												<tr>
+													<td>María González</td>
+													<td>Honda Civic</td>
+													<td>Alineación</td>
+													<td>555-5678</td>
+												</tr>
+												<tr>
+													<td>Carlos López</td>
+													<td>Ford Focus</td>
+													<td>Revisión de frenos</td>
+													<td>555-9012</td>
+												</tr>
+												<tr>
+													<td>Ana Rodríguez</td>
+													<td>Nissan Sentra</td>
+													<td>Limpieza interior</td>
+													<td>555-3456</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="column panel-reservas">
+										<h2>Reservas del Mes</h2>
+										<table>
+											<thead>
+												<tr>
+													<th>Fecha</th>
+													<th>Cliente</th>
+													<th>Vehículo</th>
+													<th>Servicio</th>
+													<th>Estado</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>05/10/2023</td>
+													<td>Juan Pérez</td>
+													<td>Toyota Corolla</td>
+													<td>Cambio de aceite</td>
+													<td>Confirmada</td>
+												</tr>
+												<tr>
+													<td>07/10/2023</td>
+													<td>María González</td>
+													<td>Honda Civic</td>
+													<td>Alineación</td>
+													<td>Pendiente</td>
+												</tr>
+												<tr>
+													<td>10/10/2023</td>
+													<td>Carlos López</td>
+													<td>Ford Focus</td>
+													<td>Revisión de frenos</td>
+													<td>Confirmada</td>
+												</tr>
+												<tr>
+													<td>12/10/2023</td>
+													<td>Ana Rodríguez</td>
+													<td>Nissan Sentra</td>
+													<td>Cambio de neumáticos</td>
+													<td>Cancelada</td>
+												</tr>
+												<tr>
+													<td>15/10/2023</td>
+													<td>Juan Pérez</td>
+													<td>Toyota Corolla</td>
+													<td>Diagnóstico completo</td>
+													<td>Confirmada</td>
+												</tr>
+												<tr>
+													<td>18/10/2023</td>
+													<td>María González</td>
+													<td>Honda Civic</td>
+													<td>Cambio de filtros</td>
+													<td>Pendiente</td>
+												</tr>
+												<tr>
+													<td>20/10/2023</td>
+													<td>Carlos López</td>
+													<td>Ford Focus</td>
+													<td>Servicio de batería</td>
+													<td>Confirmada</td>
+												</tr>
+												<tr>
+													<td>22/10/2023</td>
+													<td>Ana Rodríguez</td>
+													<td>Nissan Sentra</td>
+													<td>Limpieza interior</td>
+													<td>Pendiente</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="4"><strong>Total Confirmadas:</strong></td>
+													<td>4</td>
+												</tr>
+												<tr>
+													<td colspan="4"><strong>Total Pendientes:</strong></td>
+													<td>3</td>
+												</tr>
+												<tr>
+													<td colspan="4"><strong>Total Canceladas:</strong></td>
+													<td>1</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</main>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
